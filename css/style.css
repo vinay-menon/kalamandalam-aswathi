@@ -1,0 +1,61 @@
+/* @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville'); */
+/* @import url('https://fonts.googleapis.com/css?family=Playfair+Display'); */
+/* @import url('https://fonts.googleapis.com/css?family=Abril+Fatface'); */
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+
+body {
+    background-image: url(../images/coming-soon-bg.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 100vh;
+
+    /* font-family: 'Libre Baskerville', serif; */
+    /* font-family: 'Playfair Display', serif; */
+    /* font-family: 'Abril Fatface', cursive; */
+    font-family: 'Barlow Condensed', sans-serif;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    }
+
+@media (min-width: 672px) {
+    body {
+        background-position: 100% 0%;
+        background-size: cover;
+        align-items: flex-start;
+        justify-content: flex-end;
+        }
+    }
+
+.coming-soon-msg {
+    color: rgb(228, 211, 86);
+    padding: 10px;
+    text-align: right;
+    }
+
+h1 {
+    font-weight: 400;
+    letter-spacing: 2px;
+    /* background-image: 
+        linear-gradient(
+            65deg,
+            rgba(94, 196, 74, 0.177),
+            rgba(74, 90, 196, 0.422)
+            ); */
+    background-color: rgb(187, 77, 49);
+    display: inline;
+    padding: 0 4px;
+    }
+
+p {
+    margin-top: 10px;
+    font-style: italic;
+    }
