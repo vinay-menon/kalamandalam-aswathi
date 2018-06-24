@@ -1,0 +1,21 @@
+.main-content {
+    color: $secondaryThemeColor;
+    display: flex;
+    font-family: 'Alegreya', serif;
+    }
+.main-content--fp {
+    max-width: 50%;
+    flex: 1;
+    }
+
+.main-intro {
+    max-width: 400px;
+    margin: auto;
+    line-height: 1.4;
+    text-align: center;
+    font-size: 1.2rem;
+    }
+    
+.main-intro p + p {
+    margin-top: 24px;
+    }

@@ -1,0 +1,19 @@
+.main-footer {
+    max-width: 1280px;
+    margin: auto;
+    color: #222;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    }
+.soc-med {
+    margin-right: 24px;
+    }
+.soc-med a {
+    text-decoration: none;
+    opacity: .8;
+
+    + a {
+        margin-left: 4px;
+        }    
+    }

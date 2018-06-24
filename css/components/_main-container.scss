@@ -1,0 +1,64 @@
+.main-container  {
+    max-width: 1280px;
+    min-height: 700px;
+    margin: auto;
+    box-shadow: 0 0 50px -10px rgba(15, 20, 41, 0.32);
+    background-image: 
+        radial-gradient(
+            at bottom center,
+            #C3224D,
+            #881734
+            );
+    display: flex;
+    flex-direction: column;
+    animation: 2s fade-in forwards;
+    }
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        }
+    to {        
+        opacity: 1;
+        }
+    }
+
+.main-container--front-page {
+    background-image: 
+        radial-gradient(
+            at bottom center,
+            #C3224D,
+            #881734
+            );
+    background-repeat: no-repeat;
+    background-position: 
+        0 0;
+        position: relative;
+    // animation: 1s bg-apr-frm-lt forwards;
+
+    &:after {
+        content: '';
+        position: absolute;
+        right: 8%;
+        top: 55%;
+        transform: translateY(-50%);
+        background-image: url(../images/bg-asw-front-page.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 459px;
+        width: 467px;
+        animation: 1.5s apr-frm-lt forwards;
+        }
+    }
+
+
+@keyframes apr-frm-lt {
+    from {
+        opacity: 0;
+        transform: translateY(-50%) translateX(10%);
+        }
+    to {        
+        opacity: 1;
+        transform: translateY(-50%) translateX(0);
+        }
+    }

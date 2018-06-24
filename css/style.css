@@ -1,61 +1,165 @@
-/* @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville'); */
-/* @import url('https://fonts.googleapis.com/css?family=Playfair+Display'); */
-/* @import url('https://fonts.googleapis.com/css?family=Abril+Fatface'); */
-@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed');
-
+@import url("https://fonts.googleapis.com/css?family=Alegreya");
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    background-image: url(../images/coming-soon-bg.jpg);
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    height: 100vh;
+  background-image: url(../images/main-bg.png);
+  background-attachment: fixed;
+  background-size: auto 100vh;
+  /* background-repeat: no-repeat; */
+  /* background-position: 50% 0; */
+  padding: 90px 0;
+  color: rgba(255, 255, 255, 0.7);
+}
 
-    /* font-family: 'Libre Baskerville', serif; */
-    /* font-family: 'Playfair Display', serif; */
-    /* font-family: 'Abril Fatface', cursive; */
-    font-family: 'Barlow Condensed', sans-serif;
+.main-container {
+  max-width: 1280px;
+  min-height: 700px;
+  margin: auto;
+  box-shadow: 0 0 50px -10px rgba(15, 20, 41, 0.32);
+  background-image: radial-gradient(at bottom center, #C3224D, #881734);
+  display: flex;
+  flex-direction: column;
+  animation: 2s fade-in forwards;
+}
 
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    }
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
-@media (min-width: 672px) {
-    body {
-        background-position: 100% 0%;
-        background-size: cover;
-        align-items: flex-start;
-        justify-content: flex-end;
-        }
-    }
+.main-container--front-page {
+  background-image: radial-gradient(at bottom center, #C3224D, #881734);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: relative;
+}
 
-.coming-soon-msg {
-    color: rgb(228, 211, 86);
-    padding: 10px;
-    text-align: right;
-    }
+.main-container--front-page:after {
+  content: '';
+  position: absolute;
+  right: 8%;
+  top: 55%;
+  transform: translateY(-50%);
+  background-image: url(../images/bg-asw-front-page.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 459px;
+  width: 467px;
+  animation: 1.5s apr-frm-lt forwards;
+}
 
-h1 {
-    font-weight: 400;
-    letter-spacing: 2px;
-    /* background-image: 
-        linear-gradient(
-            65deg,
-            rgba(94, 196, 74, 0.177),
-            rgba(74, 90, 196, 0.422)
-            ); */
-    background-color: rgb(187, 77, 49);
-    display: inline;
-    padding: 0 4px;
-    }
+@keyframes apr-frm-lt {
+  from {
+    opacity: 0;
+    transform: translateY(-50%) translateX(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+  }
+}
 
-p {
-    margin-top: 10px;
-    font-style: italic;
-    }
+.main-header {
+  padding: 96px 96px 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.main-logo {
+  animation: 1s apr-frm-rt forwards;
+}
+
+@keyframes apr-frm-rt {
+  from {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.main-header nav {
+  margin-left: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-header nav a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding-bottom: 3px;
+  background-image: linear-gradient(#f5c378, #f5c378);
+  background-repeat: no-repeat;
+  background-size: 0 2px;
+  background-position: 50% 100%;
+  transition: .5s;
+}
+
+.main-header nav a:hover {
+  background-size: 100% 2px;
+}
+
+.main-header nav a span {
+  text-transform: uppercase;
+}
+
+.main-header nav a + a {
+  margin-left: 24px;
+}
+
+.main-content {
+  color: #f5c378;
+  display: flex;
+  font-family: 'Alegreya', serif;
+}
+
+.main-content--fp {
+  max-width: 50%;
+  flex: 1;
+}
+
+.main-intro {
+  max-width: 400px;
+  margin: auto;
+  line-height: 1.4;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.main-intro p + p {
+  margin-top: 24px;
+}
+
+.main-footer {
+  max-width: 1280px;
+  margin: auto;
+  color: #222;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.soc-med {
+  margin-right: 24px;
+}
+
+.soc-med a {
+  text-decoration: none;
+  opacity: .8;
+}
+
+.soc-med a + a {
+  margin-left: 4px;
+}
+/*# sourceMappingURL=style.css.map */
