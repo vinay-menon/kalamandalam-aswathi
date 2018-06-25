@@ -1,0 +1,29 @@
+.gallery-content {
+    width: 100%;
+    column-count: 5;
+    column-gap: 0;
+    visibility: hidden;
+
+    &:hover .gallery-content-item img {
+        filter: grayscale(1);
+        transition: 3s;
+
+        &:hover {
+            filter: none;
+            transition: .3s;
+            }
+        }
+    }
+
+.gallery-content-item {
+    width: 100%;
+    visibility: visible;
+    cursor: pointer;
+    padding: 1.5px;
+
+    img {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        }
+    } 

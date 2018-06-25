@@ -20,15 +20,25 @@ body {
   background-color: #f5c378;
 }
 
+h1 {
+  width: 100%;
+  text-align: right;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+}
+
 .main-container {
   max-width: 1280px;
   min-height: 700px;
   margin: auto;
   box-shadow: 0 0 50px -10px rgba(15, 20, 41, 0.32);
   background-image: radial-gradient(at bottom center, #C3224D, #881734);
+  background-repeat: no-repeat;
+  background-position: 0 0;
   display: flex;
   flex-direction: column;
   animation: 2s fade-in forwards;
+  position: relative;
 }
 
 @keyframes fade-in {
@@ -40,46 +50,22 @@ body {
   }
 }
 
-.main-container--front-page {
-  background-image: radial-gradient(at bottom center, #C3224D, #881734);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  position: relative;
-}
-
-.main-container--front-page:after {
-  content: '';
-  position: absolute;
-  right: 8%;
-  top: 55%;
-  transform: translateY(-50%);
-  background-image: url(../images/bg-asw-front-page.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 459px;
-  width: 467px;
-  animation: 1.5s apr-frm-lt forwards;
-}
-
-@keyframes apr-frm-lt {
-  from {
-    opacity: 0;
-    transform: translateY(-50%) translateX(10%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(-50%) translateX(0);
-  }
-}
-
 .main-header {
   padding: 96px 96px 0;
   display: flex;
-  overflow: hidden;
+  flex-direction: column;
+  margin-bottom: 96px;
 }
 
 .main-logo {
   animation: 1s apr-frm-rt forwards;
+  position: absolute;
+}
+
+.main-logo svg {
+  max-width: 440px;
+  fill: white;
+  stroke-width: 0;
 }
 
 @keyframes apr-frm-rt {
@@ -93,9 +79,78 @@ body {
   }
 }
 
+.main-slides {
+  position: absolute;
+  right: 0;
+  top: 30%;
+  height: 100%;
+  width: 100%;
+  animation: 1.5s apr-frm-lt forwards;
+}
+
+.main-slides img {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  height: 100%;
+  max-height: 100%;
+}
+
+.main-slides img:first-child {
+  opacity: 0;
+  animation: 8s merry-go-round-01 linear infinite;
+}
+
+.main-slides img:last-child {
+  opacity: 0;
+  animation: 8s merry-go-round-02 5s linear infinite;
+}
+
+@keyframes apr-frm-lt {
+  from {
+    opacity: 0;
+    transform: translateY(-50%) translateX(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+  }
+}
+
+@keyframes merry-go-round-01 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes merry-go-round-02 {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .main-header nav {
   margin-left: auto;
   font-family: 'Poppins', sans-serif;
+  margin-bottom: 24px;
 }
 
 .main-header nav a {
@@ -124,19 +179,17 @@ body {
 }
 
 .main-content {
+  width: 100%;
+  flex: 1;
   color: #f5c378;
   display: flex;
   font-family: 'Alegreya', serif;
-}
-
-.main-content--fp {
-  max-width: 50%;
-  flex: 1;
+  position: relative;
+  padding: 0 96px 96px;
 }
 
 .main-intro {
   max-width: 400px;
-  margin: 0 auto;
   padding-top: 48px;
   line-height: 1.4;
   text-align: center;
@@ -167,5 +220,35 @@ body {
 
 .soc-med a + a {
   margin-left: 4px;
+}
+
+.gallery-content {
+  width: 100%;
+  column-count: 5;
+  column-gap: 0;
+  visibility: hidden;
+}
+
+.gallery-content:hover .gallery-content-item img {
+  filter: grayscale(1);
+  transition: 3s;
+}
+
+.gallery-content:hover .gallery-content-item img:hover {
+  filter: none;
+  transition: .3s;
+}
+
+.gallery-content-item {
+  width: 100%;
+  visibility: visible;
+  cursor: pointer;
+  padding: 1.5px;
+}
+
+.gallery-content-item img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,16 +1,15 @@
 .main-content {
+    width: 100%;
+    flex: 1;
     color: $secondaryThemeColor;
     display: flex;
     font-family: 'Alegreya', serif;
-    }
-.main-content--fp {
-    max-width: 50%;
-    flex: 1;
+    position: relative;
+    padding: 0 96px 96px;
     }
 
 .main-intro {
     max-width: 400px;
-    margin: 0 auto;
     padding-top: 48px;
     line-height: 1.4;
     text-align: center;

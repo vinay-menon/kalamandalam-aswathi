@@ -1,11 +1,19 @@
 .main-header {
     padding: 96px 96px 0;
     display: flex;
-    overflow: hidden;
+    flex-direction: column;
+    margin-bottom: 96px;
     }
 
 .main-logo {
     animation: 1s apr-frm-rt forwards;
+    position: absolute;
+
+    svg {
+        max-width: 440px;
+        fill: white;
+        stroke-width: 0;
+        }
     }
 
 @keyframes apr-frm-rt {
