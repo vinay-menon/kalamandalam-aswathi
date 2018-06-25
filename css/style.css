@@ -64,7 +64,7 @@ h1 {
 
 .main-logo svg {
   max-width: 440px;
-  width: 100%;
+  width: 440px;
   fill: white;
   stroke-width: 0;
 }
