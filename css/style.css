@@ -168,7 +168,7 @@ h1 {
   transition: .5s;
 }
 
-.main-header nav a:hover {
+.main-header nav a:hover, .main-header nav a.is-current {
   background-size: 100% 2px;
 }
 
@@ -185,6 +185,7 @@ h1 {
   flex: 1;
   color: #f5c378;
   display: flex;
+  flex-direction: column;
   font-family: 'Alegreya', serif;
   position: relative;
   padding: 0 96px 96px;
@@ -252,5 +253,44 @@ h1 {
   width: 100%;
   max-width: 100%;
   display: block;
+}
+
+.about-content {
+  display: flex;
+}
+
+.about-content + .about-content {
+  margin-top: 96px;
+}
+
+.about-portrait {
+  margin-right: 32px;
+  width: 440px;
+  text-align: center;
+}
+
+.about-portrait img {
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+}
+
+.about-text p + p {
+  margin-top: 16px;
+}
+
+.about-text--spec {
+  align-self: center;
+}
+
+.about-spec-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+.about-spec-images img {
+  width: calc(33.333% - 6px);
+  max-width: calc(33.333% - 6px);
 }
 /*# sourceMappingURL=style.css.map */

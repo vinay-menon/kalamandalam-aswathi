@@ -1,0 +1,39 @@
+.about-content {
+    display: flex;
+
+    + .about-content {
+        margin-top: 96px;
+        }
+    }
+
+.about-portrait {
+    margin-right: 32px;
+    width: 440px;
+    text-align: center;
+
+    img {
+        display: inline-block;
+        width: auto;
+        max-width: 100%; 
+        }
+    }
+
+.about-text p + p {
+    margin-top: 16px;
+    }
+
+.about-text--spec {
+    align-self: center;
+    }   
+
+.about-spec-images {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 48px;
+
+    img {
+        width: calc(33.333% - 6px);
+        max-width: calc(33.333% - 6px);
+        }
+    }

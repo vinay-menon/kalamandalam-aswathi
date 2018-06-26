@@ -15,11 +15,12 @@
             $secondaryThemeColor
             );
     background-repeat: no-repeat;
-    background-size: 0 2px;
+    background-size: 0 2px; 
     background-position: 50% 100%;
     transition: .5s;
 
-    &:hover {
+    &:hover,
+    &.is-current {
         background-size: 100% 2px;
         }
     }
