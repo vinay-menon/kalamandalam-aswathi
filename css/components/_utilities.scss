@@ -1,12 +1,25 @@
 .section-seperator {
     border: 0;
     height: 96px;
+    display: block;
     background-image: 
         linear-gradient(
             darken($primaryThemeColor, 10),
             transparent
             );
+    // border-top: 1px solid lighten($primaryThemeColor, 15);
+    // box-shadow: 0 -20px 10px -10px transparentize(darken($primaryThemeColor, 10), .3);
+    position: relative;
     margin: 0 -96px;
-    border-top: 1px solid lighten($primaryThemeColor, 15);
-    box-shadow: 0 -20px 10px -10px transparentize(darken($primaryThemeColor, 10), .3)
+
+    &:before {
+        content: '';
+        background-image: url(../images/main-bg.png);
+        background-attachment: fixed;
+        position: absolute;
+        height: 3px;
+        top: 0;
+        left:0; 
+        right: 0;
+        }
     }

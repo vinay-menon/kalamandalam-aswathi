@@ -294,9 +294,20 @@ h1 {
 .section-seperator {
   border: 0;
   height: 96px;
+  display: block;
   background-image: linear-gradient(#981a3c, transparent);
+  position: relative;
   margin: 0 -96px;
-  border-top: 1px solid #e15177;
-  box-shadow: 0 -20px 10px -10px rgba(152, 26, 60, 0.7);
+}
+
+.section-seperator:before {
+  content: '';
+  background-image: url(../images/main-bg.png);
+  background-attachment: fixed;
+  position: absolute;
+  height: 3px;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */
