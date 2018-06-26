@@ -1,9 +1,6 @@
 .about-content {
     display: flex;
-
-    + .about-content {
-        margin-top: 96px;
-        }
+    margin-bottom: 48px;
     }
 
 .about-portrait {
