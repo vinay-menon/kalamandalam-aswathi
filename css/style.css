@@ -14,6 +14,7 @@ body {
   /* background-position: 50% 0; */
   padding: 90px 0;
   color: rgba(255, 255, 255, 0.7);
+  overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -98,16 +99,6 @@ h1 {
   max-height: 100%;
 }
 
-.main-slides img:first-child {
-  opacity: 0;
-  animation: 8s merry-go-round-01 linear infinite;
-}
-
-.main-slides img:last-child {
-  opacity: 0;
-  animation: 8s merry-go-round-02 5s linear infinite;
-}
-
 @keyframes apr-frm-lt {
   from {
     opacity: 0;
@@ -119,33 +110,33 @@ h1 {
   }
 }
 
-@keyframes merry-go-round-01 {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+/* https://stackoverflow.com/a/28930815/604040 */
+.main-slides img {
+  animation: cross-fade 16s infinite ease-in-out;
 }
 
-@keyframes merry-go-round-02 {
+.main-slides img:first-child {
+  animation-delay: -8s;
+}
+
+@keyframes cross-fade {
   0% {
-    opacity: 1;
-  }
-  25% {
     opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
   }
   75% {
-    opacity: 0;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
   }
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
