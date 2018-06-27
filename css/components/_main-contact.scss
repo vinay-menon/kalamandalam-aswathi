@@ -1,0 +1,64 @@
+.main-content--contact {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    > h2 {
+        width: 100%;
+        }
+    }
+
+.contact-portrait {
+    margin-right: 48px;
+    }
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    flex: 1;
+    border-right: 1px solid $secondaryThemeColor;
+    padding-right: 48px;
+    }
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    }
+
+.label {
+    display: block;
+    }
+
+input[type=text], textarea {
+    padding: 5px;
+    background-color: hsla(0,0,100%,.5);
+    border: 0;
+    font-family: inherit;
+
+    &:hover,
+    &:focus {
+        background-color: hsla(0,0,100%,.8);
+        }
+    }
+
+button[type=submit] {
+    padding: 10px;
+    align-self: flex-start;
+    background-color: transparent;
+    border: 1px solid $secondaryThemeColor;
+    color: $secondaryThemeColor;
+    border-radius: 5px;
+    }
+
+.address {
+    display: flex;
+    flex: 1;
+    
+    address {
+        font-style: normal;
+        font-size: 1.2rem;
+        line-height: 1.7;
+        margin: 0 auto;
+        }
+    }

@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(../images/main-bg.png);
+  background-image: url(../images/main-bg.png), linear-gradient(#C3224D, #f5c378);
   background-attachment: fixed;
   background-size: auto 100vh;
   /* background-repeat: no-repeat; */
@@ -22,15 +22,28 @@ body {
   background-color: #f5c378;
 }
 
-h1 {
-  width: 100%;
-  text-align: right;
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
   font-weight: 100;
 }
 
+h1 {
+  width: 100%;
+  text-align: right;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+h3 {
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
 .main-container {
-  max-width: 1280px;
+  max-width: 1080px;
   min-height: 700px;
   margin: auto;
   box-shadow: 0 0 50px -10px rgba(15, 20, 41, 0.32);
@@ -144,6 +157,8 @@ h1 {
   margin-left: auto;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 24px;
+  position: relative;
+  z-index: 999;
 }
 
 .main-header nav a {
@@ -195,7 +210,7 @@ h1 {
 }
 
 .main-footer {
-  max-width: 1280px;
+  max-width: 1080px;
   margin: auto;
   color: #222;
   padding: 24px;
@@ -253,7 +268,7 @@ h1 {
 
 .about-portrait {
   margin-right: 32px;
-  width: 440px;
+  width: 800px;
   text-align: center;
 }
 
@@ -263,8 +278,8 @@ h1 {
   max-width: 100%;
 }
 
-.about-text p + p {
-  margin-top: 16px;
+.about-text p {
+  margin-bottom: 16px;
 }
 
 .about-text--spec {
@@ -280,6 +295,71 @@ h1 {
 .about-spec-images img {
   width: calc(33.333% - 6px);
   max-width: calc(33.333% - 6px);
+  align-self: flex-start;
+}
+
+.main-content--contact {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-content--contact > h2 {
+  width: 100%;
+}
+
+.contact-portrait {
+  margin-right: 48px;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  flex: 1;
+  border-right: 1px solid #f5c378;
+  padding-right: 48px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+.label {
+  display: block;
+}
+
+input[type=text], textarea {
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 0;
+  font-family: inherit;
+}
+
+input[type=text]:hover, input[type=text]:focus, textarea:hover, textarea:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+button[type=submit] {
+  padding: 10px;
+  align-self: flex-start;
+  background-color: transparent;
+  border: 1px solid #f5c378;
+  color: #f5c378;
+  border-radius: 5px;
+}
+
+.address {
+  display: flex;
+  flex: 1;
+}
+
+.address address {
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin: 0 auto;
 }
 
 .section-seperator {
@@ -296,7 +376,7 @@ h1 {
   background-image: url(../images/main-bg.png);
   background-attachment: fixed;
   position: absolute;
-  height: 3px;
+  height: 2px;
   top: 0;
   left: 0;
   right: 0;
