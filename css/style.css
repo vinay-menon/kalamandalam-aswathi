@@ -540,4 +540,19 @@ button[type=submit] {
   left: 0;
   right: 0;
 }
+
+.dl-btn {
+  padding: 10px;
+  background-color: #f5c378;
+  -webkit-transform: skewX(-25deg);
+          transform: skewX(-25deg);
+  display: inline-block;
+  color: #C3224D;
+}
+
+.dl-btn span {
+  display: block;
+  -webkit-transform: skewX(25deg);
+          transform: skewX(25deg);
+}
 /*# sourceMappingURL=style.css.map */

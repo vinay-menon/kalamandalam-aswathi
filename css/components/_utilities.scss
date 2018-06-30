@@ -23,3 +23,16 @@
         right: 0;
         }
     }
+
+.dl-btn {
+    padding: 10px;
+    background-color: $secondaryThemeColor;
+    transform: skewX(-25deg);
+    display: inline-block;
+    color: $primaryThemeColor;
+
+    span {
+        display: block;
+        transform: skewX(25deg);
+        }
+    }
