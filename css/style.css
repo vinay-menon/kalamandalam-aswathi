@@ -553,11 +553,18 @@ button[type=submit] {
           transform: skewX(-25deg);
   display: inline-block;
   color: #C3224D;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .dl-btn span {
   display: block;
   -webkit-transform: skewX(25deg);
           transform: skewX(25deg);
+}
+
+.dl-btn:hover {
+  background-color: rgba(245, 195, 120, 0.4);
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

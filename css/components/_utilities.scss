@@ -30,9 +30,15 @@
     transform: skewX(-25deg);
     display: inline-block;
     color: $primaryThemeColor;
+    transition: .2s;
 
     span {
         display: block;
         transform: skewX(25deg);
+        }
+
+    &:hover {
+        background-color: transparentize($secondaryThemeColor, .6);
+        color: lighten($primaryThemeColor, 98);
         }
     }
