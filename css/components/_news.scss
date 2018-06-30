@@ -1,0 +1,25 @@
+.news {
+    display: flex;
+    flex-direction: column;
+    }
+
+.news-item {
+    display: flex;
+    margin-bottom: 48px;
+
+    + .news-item {
+        border-top: 1px solid $secondaryThemeColor;
+        padding-top: 48px;
+        }
+    }
+
+.news-thumb {
+    min-width: 400px;
+    text-align: center;
+    margin-right: 32px;
+
+    img {
+        max-width: 100%;
+        max-height: 300px;
+        }
+    }
