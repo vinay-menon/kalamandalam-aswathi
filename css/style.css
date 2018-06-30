@@ -395,11 +395,16 @@ h3 {
   margin-top: 48px;
 }
 
-.about-spec-images img {
+.about-spec-images a {
   width: calc(33.333% - 6px);
   max-width: calc(33.333% - 6px);
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+
+.about-spec-images a img {
+  width: 100%;
+  max-width: 100%;
 }
 
 .main-content--contact {

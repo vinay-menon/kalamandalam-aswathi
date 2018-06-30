@@ -31,9 +31,14 @@
 
     margin-top: 48px;
 
-    img {
+    a {
         width: calc(33.333% - 6px);
         max-width: calc(33.333% - 6px);
         align-self: flex-start;
+
+        img {
+            width: 100%;
+            max-width: 100%;
+            }
         }
     }
