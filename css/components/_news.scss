@@ -13,10 +13,35 @@
         }
     }
 
-.news-thumb {
+.news-item-desc {
+    h2 {
+        margin-bottom: 12px;
+        font-size: 1.8rem;
+
+        + p:not(.news-item-venue) {
+            margin-top: 24px;
+            }
+        }
+    }
+
+.news-item-venue {
+    margin-bottom: 24px;
+    font-style: italic;
+    }
+
+.news-thumb-wrapper {
+    display: flex;
     min-width: 400px;
     text-align: center;
     margin-right: 32px;
+    }
+
+.news-thumb {
+    flex: 1;
+    
+    + .news-thumb {
+        margin-left: 8px;
+        }
 
     img {
         max-width: 100%;

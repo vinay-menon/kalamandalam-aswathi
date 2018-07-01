@@ -26,10 +26,10 @@
 
 .dl-btn {
     padding: 10px;
-    background-color: $secondaryThemeColor;
+    background-color: rgba(34, 34, 34, 0.374);
     transform: skewX(-25deg);
     display: inline-block;
-    color: $primaryThemeColor;
+    color: $secondaryThemeColor;
     transition: .2s;
 
     span {
