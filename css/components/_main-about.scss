@@ -5,13 +5,22 @@
 
 .about-portrait {
     margin-right: 32px;
-    width: 800px;
+    flex-basis: 350px;
+    flex-grow: 0;
+    flex-shrink: 0;
     text-align: center;
+    display: flex;
 
     img {
         display: inline-block;
         width: auto;
         max-width: 100%; 
+        align-self: flex-start;
+        margin: 0 auto;
+
+        &:not(.profile-headshot) {
+            align-self: flex-end;
+            }
         }
     }
 
