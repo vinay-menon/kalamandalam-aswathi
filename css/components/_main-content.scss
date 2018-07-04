@@ -8,6 +8,12 @@
     position: relative;
     padding: 0 96px 96px;
     }
+@media (max-width: 884px) {
+    .main-content {
+        width: 100%;
+        padding: 0 24px 96px;
+        }
+    }
 
 .main-intro {
     max-width: 400px;
@@ -17,6 +23,12 @@
     font-size: 1.2rem;
     position: relative;
     z-index: 3;
+    }
+@media (max-width: 884px) {
+    .main-intro {
+        max-width: 100%;
+        margin: auto;
+        }
     }
     
 .main-intro p + p {

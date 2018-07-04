@@ -17,6 +17,17 @@
     animation: 2s fade-in forwards;
     position: relative;
     }
+@media (max-width: 1080px) {
+    .main-container  {
+        box-shadow: 0 0 50px -10px rgba(15, 20, 41, 0.32);
+        background-image: 
+            radial-gradient(
+                at bottom center,
+                transparentize($primaryThemeColor, .2),
+                hsla(345, 72%, 31%, 0.796)
+                );
+        }
+    }
 
 @keyframes fade-in {
     from {

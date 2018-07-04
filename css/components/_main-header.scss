@@ -5,6 +5,38 @@
     margin-bottom: 96px;
     }
 
+@media (max-width: 1080px) {
+    .main-header {
+        padding: 24px 24px 0;
+        }
+    }
+
+
+@media (max-width: 980px) {
+    .main-header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 32px;
+
+        h1 {
+            width: 100%;
+            text-align: center;
+            }
+        }
+    }
+@media (max-width: 960px) {
+    .main-header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+    }
+@media (max-width: 884px) {
+    .main-header {
+        margin-bottom: 0;
+        }
+    }
+
 .main-logo {
     animation: 1s apr-frm-rt forwards;
     position: absolute;
@@ -14,6 +46,19 @@
         width: 440px;
         fill: white;
         stroke-width: 0;
+        }
+    }
+
+@media (max-width: 980px) {
+    .main-logo {
+        position: relative;
+
+        svg {
+            max-width: 440px;
+            width: 100%;
+            fill: white;
+            stroke-width: 0;
+            }
         }
     }
 

@@ -15,6 +15,17 @@ body {
     overflow-x: hidden;
     }
 
+@media (max-width: 1210px) {
+    body {
+        padding: 24px 0;
+        }
+    }
+@media (max-width: 1080px) {
+    body {
+        padding: 0 0;
+        }
+    }
+
 ::-moz-selection {
     color: $primaryThemeColor;
     background-color: $secondaryThemeColor;

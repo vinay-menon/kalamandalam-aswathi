@@ -10,6 +10,7 @@
     flex-shrink: 0;
     text-align: center; 
     display: flex;
+    position: relative;
 
     img {
         display: inline-block;
@@ -30,8 +31,39 @@
         }
     }
 
+@media (max-width: 670px) {
+    .about-content {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-color: #fff;
+        
+        &.about-content--moh {
+            background-image: url(../images/moh-bg.png);
+            }
+        &.about-content--bha {
+            background-image: url(../images/bha-bg.png);
+            }
+        &.about-content--act {
+            background-image: url(../images/act-bg.png);
+            background-size: contain;
+            }
+        }
+    .about-portrait {
+        display: none;
+        }
+    .about-text {
+        max-width: 70%;
+        position: relative;
+        z-index: 1;
+        background-color: rgba(34, 34, 34, 0.898);
+        margin-left: auto;
+        padding: 24px;
+        }
+    }
+
 .about-text--spec {
-    align-self: center;
+    align-self: flex-end;
     }   
 
 .about-spec-images {
@@ -48,6 +80,7 @@
         img {
             width: 100%;
             max-width: 100%;
+            display: block;
             }
         }
     }
