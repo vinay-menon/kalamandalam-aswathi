@@ -15,6 +15,10 @@
 .nav-trigger {
     display: none;
 
+    &:focus {
+        outline: 0;
+        }
+
     img {
         max-width: 24px;
         display: block;

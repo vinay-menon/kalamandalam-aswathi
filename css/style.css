@@ -267,6 +267,10 @@ h3 {
   display: none;
 }
 
+.nav-trigger:focus {
+  outline: 0;
+}
+
 .nav-trigger img {
   max-width: 24px;
   display: block;
