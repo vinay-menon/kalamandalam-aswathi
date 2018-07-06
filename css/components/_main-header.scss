@@ -21,6 +21,7 @@
         h1 {
             width: 100%;
             text-align: center;
+            margin-bottom: 32px;
             }
         }
     }
@@ -58,6 +59,15 @@
             width: 100%;
             fill: white;
             stroke-width: 0;
+            }
+        }
+    
+    .main-header.logo-up .main-logo {
+        z-index: 99999;
+        position: fixed;
+
+        svg, #XMLID_14 path {
+            fill: #222!important;
             }
         }
     }

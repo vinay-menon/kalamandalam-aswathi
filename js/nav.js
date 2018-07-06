@@ -4,6 +4,7 @@ $(".nav-trigger").on("click", function(e) {
     e.preventDefault();
     
     $(".main-header nav").toggleClass("menu-open");
+    $(".main-header").toggleClass("logo-up");
 
     if ($blah === true) {
         $blah = false;

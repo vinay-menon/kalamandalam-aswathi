@@ -42,3 +42,15 @@
         color: lighten($primaryThemeColor, 98);
         }
     }
+
+@media (max-width: 670px) {
+    .dl-btn {
+        background-color: rgba(84, 22, 37, 0.574);
+        color: $secondaryThemeColor;
+
+        &:hover {
+            background-color: transparentize($secondaryThemeColor, .6);
+            color: lighten($primaryThemeColor, 98);
+            }
+        }
+    }
