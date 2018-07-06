@@ -405,6 +405,8 @@ h3 {
     bottom: 0;
     margin-bottom: 0;
     background-color: rgba(255, 255, 255, 0.898);
+    -webkit-transition: .5s;
+    transition: .5s;
   }
   .nav-trigger {
     display: -webkit-box;
