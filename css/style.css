@@ -376,6 +376,8 @@ h3 {
   max-width: 24px;
   display: block;
   opacity: .8;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 @media (max-width: 520px) {
@@ -420,6 +422,7 @@ h3 {
     right: 10px;
     border: 0;
     background-color: #f5c378;
+    background-color: #ff395a;
     color: #C3224D;
     z-index: 999;
     border-radius: 50%;

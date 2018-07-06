@@ -23,7 +23,7 @@
         max-width: 24px;
         display: block;
         opacity: .8;
-        // filter: invert(1);
+        filter: invert(1);
         }
     }
 
@@ -57,6 +57,7 @@
         right: 10px;
         border: 0;
         background-color: $secondaryThemeColor;
+        background-color: rgb(255, 57, 90);
         color: $primaryThemeColor;
         // box-shadow: 0 0 10px #000;
         z-index: 999;
