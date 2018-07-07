@@ -626,11 +626,9 @@ h3 {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin: 0 auto;
-}
-
-.about-portrait img:not(.profile-headshot) {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .about-text p {
