@@ -396,7 +396,7 @@ h3 {
         -ms-flex-pack: end;
             justify-content: flex-end;
     padding: 24px;
-    padding-bottom: 128px;
+    padding-bottom: 64px;
   }
   .main-header nav.menu-open {
     opacity: 1;
@@ -653,7 +653,7 @@ h3 {
     margin: 0 -24px;
   }
   .about-content.about-content--asw {
-    background-image: url(../images/asw-bg.png);
+    background-image: url(../images/asw-bg.jpg);
   }
   .about-content.about-content--moh {
     background-image: url(../images/moh-bg.png);
