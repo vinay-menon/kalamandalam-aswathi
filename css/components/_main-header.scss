@@ -16,7 +16,7 @@
     .main-header {
         flex-direction: row;
         flex-wrap: wrap;
-        margin-bottom: 32px;
+        margin-bottom: 0;
 
         h1 {
             width: 100%;
@@ -27,7 +27,7 @@
     }
 @media (max-width: 960px) {
     .main-header {
-        flex-direction: column;
+        flex-direction: column; 
         justify-content: center;
         align-items: center;
         }

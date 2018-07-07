@@ -20,11 +20,26 @@
     padding-right: 48px;
     }
 
+@media (max-width: 980px) {
+    #contact {
+        border-right: 0;
+        padding-right: 0;
+        margin-bottom: 48px;
+        }
+    }
+
 label {
     display: flex;
     flex-direction: column;
     margin-bottom: 12px;
     }
+
+    @media (max-width: 350px) {
+        
+label {
+    width: 100%;
+    }
+        }
 
 .label {
     display: block;
@@ -41,6 +56,12 @@ input[type=text], textarea {
         background-color: hsla(0,0,100%,.8);
         }
     }
+    @media (max-width: 350px) {
+        
+input[type=text], textarea {
+    width: 100%;
+    }
+        }
 
 button[type=submit] {
     padding: 10px;
@@ -60,5 +81,12 @@ button[type=submit] {
         font-size: 1.2rem;
         line-height: 1.7;
         margin: 0 auto;
+        }
+    }
+
+@media (max-width: 980px) {
+    .address {
+        width: 100%;
+        flex: auto;
         }
     }
