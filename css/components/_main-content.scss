@@ -19,10 +19,28 @@
     max-width: 400px;
     padding-top: 48px;
     line-height: 1.4;
-    text-align: center;
     font-size: 1.2rem;
     position: relative;
     z-index: 3;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+
+    color: desaturate($secondaryThemeColor, 89);
+
+    blockquote {
+        margin-bottom: 12px;
+        font-weight: 300;
+        }
+
+    cite {
+        font-size: 1.2rem;
+        }
     }
 @media (max-width: 884px) {
     .main-intro {
