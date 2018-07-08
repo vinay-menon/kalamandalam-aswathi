@@ -708,6 +708,10 @@ h3 {
   top: 0;
 }
 
+.about-text {
+  color: #dfbf8e;
+}
+
 .about-text p {
   margin-bottom: 16px;
 }

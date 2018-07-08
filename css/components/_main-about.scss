@@ -18,8 +18,8 @@
         max-width: 100%; 
         align-self: flex-start;
         margin: 0 auto;
-    position: sticky;
-    top: 0;
+        position: sticky;
+        top: 0;
 
         &:not(.profile-headshot) {
             // align-self: flex-end;
@@ -28,6 +28,8 @@
     }
 
 .about-text {
+    color: desaturate($secondaryThemeColor, 30);
+
     p {
         margin-bottom: 16px;
         }
